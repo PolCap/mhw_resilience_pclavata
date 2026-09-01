@@ -229,7 +229,7 @@ elas_res <- function(mat, perturb = 0.01,
                        components=T) {
   
   # Calculate initial first step attenuation
-  atten1 <- 1-popdemo::reac(mat, bound = "lower")
+  atten1 <- popdemo::reac(mat, bound = "lower")
   
   drow <- dim(mat)[1]
   dcol <- dim(mat)[2]
